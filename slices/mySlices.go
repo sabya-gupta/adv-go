@@ -37,4 +37,10 @@ func WorkWithSlices() {
 	fmt.Println("team = ", team)
 	fmt.Println("team2 = ", team2)
 
+	for i, v := range team2 {
+		fmt.Println(i, ".", v)
+	}
+	for _, v := range team2 {
+		fmt.Println(v)
+	}
 }
