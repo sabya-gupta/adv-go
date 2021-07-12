@@ -46,3 +46,27 @@ func WorkWithSlices() {
 		fmt.Println(v)
 	}
 }
+
+func AnotherSliceFunc() {
+	a := []int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+	getAnArrAndChangeItsVal(a) //Slices are passed by ref.
+	fmt.Println(a)
+
+	getAnArrAndChangeItsSize(a) // But if size changes problem
+	fmt.Println(a)
+
+	a = getAnArrAndChangeItsSizeRet(a)
+	fmt.Println(a)
+}
+
+func getAnArrAndChangeItsVal(arr []int) {
+	arr[5] = 50
+}
+
+func getAnArrAndChangeItsSize(arr []int) {
+	arr = append(arr, 10)
+}
+
+func getAnArrAndChangeItsSizeRet(arr []int) []int {
+	return append(arr, 10)
+}
