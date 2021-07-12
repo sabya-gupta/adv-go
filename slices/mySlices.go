@@ -1,5 +1,7 @@
 package slices
 
+//https://medium.com/swlh/golang-tips-why-pointers-to-slices-are-useful-and-how-ignoring-them-can-lead-to-tricky-bugs-cac90f72e77b
+
 import (
 	"fmt"
 	"structs"
